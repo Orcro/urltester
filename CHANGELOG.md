@@ -6,6 +6,24 @@
 
 All notable changes to this project will be documented in this file. This change log (aims to) follow the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## Unreleased - 2021-09-27
+
+### Added
+
+- first url in file is opened in firefox (or a new tab if already open)
+
+### Changed
+
+- `core.clj` structured better
+
+### Removed
+
+- no longer prints urls list directly
+
+### Fixed
+
+- N/A
+
 ## [0.0.2] - 2021-09-27
 
 ### Added

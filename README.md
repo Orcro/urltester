@@ -34,6 +34,7 @@ Maintainer: Alex alexander.murphy@orcro.co.uk
 
 - Large numbers of URLs can quickly increase RAM utilization
 - Some files have `webtester` instead of `urltester` (should not be an issue for use, might be for dev)
+- Process hangs in the shell until firefox is closed down completely - or kill signal is sent
 
 ## Full installation instructions
 
