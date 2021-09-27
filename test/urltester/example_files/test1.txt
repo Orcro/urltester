@@ -1,0 +1,6 @@
+This is random text and is ignored.
+So is this. But the line below is a valid url and will be checked...
+https://www.google.co.uk
+
+The next url is invalid - this won't be checked!
+htps://www.google.co.uk
