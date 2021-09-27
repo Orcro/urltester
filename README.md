@@ -1,44 +1,41 @@
 # webtester
 
-FIXME: description
+A Java applet written in Clojure which tests the existence of web-servers provided by URLs in a text-based file. These text files could be `.txt`, `.md`, or even source code file like `.clj`. Currently, the applet scans the input file for valid URLs and attempts to open tabs in Firefox &reg;.
 
-## Installation
+## Quick Use
 
-Download from http://example.com/FIXME.
+> Full installation instructions are provided at the end of this readme.
 
-## Usage
+Find the latest version in `./releases/`
 
-FIXME: explanation
-
-    $ java -jar webtester-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+```clojure
+java -jar 0.0.1-urltester.jar $file-to-test
+```
 
 ## License
 
-Copyright © 2021 FIXME
+Copyright © 2021 Orcro Ltd.
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
 http://www.eclipse.org/legal/epl-2.0.
 
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+## Contact
+
+Orcro Ltd. team@orcro.co.uk
+
+Maintainer: Alex alexander.murphy@orcro.co.uk
+
+## Known bugs/quirks
+
+- Large numbers of URLs can quickly increase RAM utilization
+
+## Full installation instructions
+
+### Windows
+
+- tbc
+
+### GNU/Linux
+
+- tbc
