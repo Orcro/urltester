@@ -2,7 +2,7 @@
 ; 
 ; SPDX-License-Identifier: EPL-2.0 
 
-(defproject urltester "0.0.2"
+(defproject urltester "0.0.3"
   :description "A Java applet written in Clojure for testing the validity of URLs within a text-based file."
   :url "https://github.com/galacticalex/urltester"
   :license {:name "EPL-2.0"

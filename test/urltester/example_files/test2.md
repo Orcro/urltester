@@ -9,6 +9,9 @@ https://www.duckduckgo.com
 Good url
 https://facebook.com
 
+Good url - but not valid!
+https://mynonexistantdomain.com
+
 Bad url - misspelled
 htps://www.google.co.uk
 

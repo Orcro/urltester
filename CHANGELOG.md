@@ -6,15 +6,16 @@
 
 All notable changes to this project will be documented in this file. This change log (aims to) follow the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
-## Unreleased - 2021-09-27
+## [0.0.3] - 2021-09-27
 
 ### Added
 
-- first url in file is opened in firefox (or a new tab if already open)
+- all urls in given file are opened in new firefox windows
 
 ### Changed
 
 - `core.clj` structured better
+- used `.sh` script now - won't work for windows yet
 
 ### Removed
 
@@ -24,7 +25,7 @@ All notable changes to this project will be documented in this file. This change
 
 - N/A
 
-## [0.0.2] - 2021-09-27
+## 0.0.2 - 2021-09-27
 
 ### Added
 
@@ -62,4 +63,4 @@ All notable changes to this project will be documented in this file. This change
 
 - N/A
 
-[0.0.2]: https://github.com/galacticalex/urltester/releases
+[0.0.3]: https://github.com/galacticalex/urltester/releases

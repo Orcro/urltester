@@ -4,13 +4,16 @@
 
 (ns urltester.core
   (:gen-class)
-  (:require clojure.java.shell clojure.java.io))
+  (:require clojure.java.shell clojure.java.io)
+  (:import java.lang.Runtime))
 
 ; this is the global regex used to match urls
 (def urlregex #"https:\/\/.*|http:\/\/.*")
 
 ; for repl testing 
 (def p "test/urltester/example_files/test1.txt")
+
+; don't remove just yet
 
 ;(clojure.string/replace urls #"https:\/\/|http:\/\/" "www."))
 
@@ -27,8 +30,9 @@
 (defn pingUrls
   "Pings each extracted URL."
   [urls]
-  (print (clojure.java.shell/sh "firefox" "--new-tab" (first urls) "& disown"))
-;  (clojure.java.shell/sh "ping" "-c 1" (first urls))
+  (spit "out.sh" (str "firefox --new-window " (clojure.string/join " --new-window " urls)))
+  (clojure.java.shell/sh "bash" "out.sh")
+  (clojure.java.shell/sh "bash" "rm" "out.sh")
   nil)
 
 (defn checkFilePath
@@ -39,6 +43,7 @@
     (print (str "\nThe provided file at the path:\n\n" filePath "\n\ndoesn't exist.\n\n"))))
 
 (defn -main
+  
   "This, is the entry point to the program."
   [& args]
   (if (= (count args) 1)
