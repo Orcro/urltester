@@ -6,6 +6,24 @@
 
 All notable changes to this project will be documented in this file. This change log (aims to) follow the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+
+### Added
+
+- N/A
+
+### Changed
+
+- N/A
+- N/A
+
+### Removed
+
+- N/A
+
+### Fixed
+
+- Intermediary script cleaned up before program exit
+
 ## [0.0.3] - 2021-09-27
 
 ### Added
