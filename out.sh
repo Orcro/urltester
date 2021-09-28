@@ -1,1 +1,0 @@
-firefox --new-window https://www.google.co.uk --new-window https://www.duckduckgo.com --new-window https://facebook.com --new-window https://mynonexistantdomain.com
