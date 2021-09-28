@@ -6,6 +6,7 @@
 
 All notable changes to this project will be documented in this file. This change log (aims to) follow the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## Unreleased - 2021-09-28
 
 ### Added
 
@@ -13,7 +14,6 @@ All notable changes to this project will be documented in this file. This change
 
 ### Changed
 
-- N/A
 - N/A
 
 ### Removed
@@ -81,4 +81,4 @@ All notable changes to this project will be documented in this file. This change
 
 - N/A
 
-[0.0.3]: https://github.com/galacticalex/urltester/releases
+[0.0.3]: https://github.com/galacticalex/urltester/release
