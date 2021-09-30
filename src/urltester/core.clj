@@ -32,7 +32,7 @@
   [urls]
   (spit "out.sh" (str "firefox --new-window " (clojure.string/join " --new-window " urls)))
   (clojure.java.shell/sh "bash" "out.sh")
-  (clojure.java.shell/sh "bash" "rm" "out.sh")
+  (clojure.java.shell/sh "rm" "out.sh")
   nil)
 
 (defn checkFilePath
