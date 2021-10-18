@@ -7,7 +7,7 @@
   (:require clojure.java.shell clojure.java.io)
   (:import java.lang.Runtime))
 
-; this is the global regex used to match urls
+; this is the global regex used to match urls make this external
 (def urlregex #"https:\/\/.*|http:\/\/.*")
 
 ; for repl testing 

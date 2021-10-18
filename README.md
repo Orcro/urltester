@@ -20,9 +20,7 @@ java -jar 0.0.1-urltester.jar $file-to-test
 
 Copyright © 2021 Orcro Ltd.
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
+This program and the accompanying materials are made available under the terms of the Apache License Version 2.0 which is available at (www.apache.org/licenses/LICENSE-2.0.txt)[www.apache.org/licenses/LICENSE-2.0.txt].
 
 ## Contact
 
@@ -30,11 +28,15 @@ Orcro Ltd. team@orcro.co.uk
 
 Maintainer: Alex alexander.murphy@orcro.co.uk
 
+## Future objectives
+
+Change methodology for testing files from "open windows for manual verification" to "request http data and validate there is a response". This should streamline the use and make automation much easier. A manual verification option can remain.
+
 ## Known bugs/quirks
 
 - Large numbers of URLs can quickly increase RAM utilization
 - Some files have `webtester` instead of `urltester` (should not be an issue for use, might be for dev)
-- Process hangs in the shell until firefox is closed down completely - or kill signal is sent
+- Process hangs in the shell until firefox is closed down completely - or kill signal is sent (new method for testing urls will solve this, perhaps 0.0.4)
 
 ## Full installation instructions
 

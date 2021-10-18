@@ -14,7 +14,8 @@ All notable changes to this project will be documented in this file. This change
 
 ### Changed
 
-- N/A
+- License changed from EPL-2.0 to Apache-2.0
+- project on 0.0.4
 
 ### Removed
 
