@@ -1,6 +1,6 @@
 ; SPDX-FileCopyrightText: 2021 Orcro Ltd. team@orcro.co.uk 
 ; 
-; SPDX-License-Identifier: EPL-2.0 
+; SPDX-License-Identifier: Apache-2.0
 
 (ns urltester.core
   (:gen-class)
