@@ -4,13 +4,14 @@
 
 # Change Log
 
-All notable changes to this project will be documented in this file. This change log (aims to) follow the conventions of [keepachangelog.com](http://keepachangelog.com/).
+All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
-## Unreleased - 2021-09-28
+## [0.0.4] - 2021-10-20
 
 ### Added
 
-- N/A
+- clj-http now GETs data from urls, if data is returned successfully, then server must be active
+- `src/urltester/scratch.clj` added as a scratch-pad for testing code in the REPL before adding to core
 
 ### Changed
 
@@ -19,13 +20,14 @@ All notable changes to this project will be documented in this file. This change
 
 ### Removed
 
-- N/A
+- Function to open links in firefox browsers (gnu/linux specific)
+- Intermediary script cleaned up before program exit
 
 ### Fixed
 
-- Intermediary script cleaned up before program exit
+- n/a
 
-## [0.0.3] - 2021-09-27
+## 0.0.3 - 2021-09-27
 
 ### Added
 
@@ -82,4 +84,4 @@ All notable changes to this project will be documented in this file. This change
 
 - N/A
 
-[0.0.3]: https://github.com/galacticalex/urltester/release
+[0.0.4]: https://github.com/galacticalex/urltester/release

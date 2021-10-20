@@ -4,16 +4,18 @@
 
 # urltester
 
-A Java productivity tool written in Clojure which tests the existence of web-servers provided by URLs in a text-based file. These text files could be `.txt`, `.md`, or even source code file like `.clj`. Currently, the applet scans the input file for valid URLs and attempts to open tabs in Firefox &reg;.
+A Java productivity tool written in Clojure which tests the existence of web-servers provided by URLs in a text-based file. These text files could be `.txt`, `.md`, or even source code file like `.clj`. Currently, the output is raw - boolean values indicating which links are valid.
 
 ## Quick Use
 
 > Full installation instructions are provided at the end of this readme.
 
-Find the latest version in `./releases/`
+Find the latest version in `./releases/`, run that as a java applet.
+
+Currently, the output is rather limited, but the url test is robust.
 
 ```clojure
-java -jar 0.0.1-urltester.jar $file-to-test
+java -jar ut004.jar $file-to-test
 ```
 
 ## License
@@ -21,6 +23,12 @@ java -jar 0.0.1-urltester.jar $file-to-test
 Copyright © 2021 Orcro Ltd.
 
 This program and the accompanying materials are made available under the terms of the Apache License Version 2.0 which is available at (www.apache.org/licenses/LICENSE-2.0.txt)[www.apache.org/licenses/LICENSE-2.0.txt].
+
+### Dependencies
+
+There is one dependency `clj-http`[https://github.com/dakrone/clj-http]. That software package is released under the MIT license with the following copyright notice:
+
+> Copyright (c) 2013 M. Lee Hinman
 
 ## Contact
 
@@ -34,20 +42,15 @@ Change methodology for testing files from "open windows for manual verification"
 
 ## Known bugs/quirks
 
-- Large numbers of URLs can quickly increase RAM utilization
 - Some files have `webtester` instead of `urltester` (should not be an issue for use, might be for dev)
-- Process hangs in the shell until firefox is closed down completely - or kill signal is sent (new method for testing urls will solve this, perhaps 0.0.4)
 
 ## Full installation instructions
 
 ### Prerequisites
 
-It is likely you have the pre-requisites already. But you will need:
+It is likely you have this pre-requisite already. But you will need a [Java](https://java.com/en/download) virtual machine.
 
-- The [Firefox](https://www.mozilla.org/en-GB/firefox/new) internet browser 
-- A [Java](https://java.com/en/download) virtual machine
-
-If necessary, install these programs from the links above. These must be runnable from the command line as shown in the next sections.
+If necessary, install that from the link above. It must be runnable from the command line as shown in the next sections.
 
 ### Windows
 
@@ -55,13 +58,13 @@ If necessary, install these programs from the links above. These must be runnabl
 
 ### GNU/Linux
 
-Verify firefox and java are installed correctly from your shell, like so:
-
-`firefox --help`
+Verify java is installed correctly from your shell, like so:
 
 `java --version`
 
-These should output the version numbers of the two programs. If not, then they are not installed correctly.
+That should output the version numbers. If not, then it is not installed correctly.
+
+Next,
 
 - Download the latest `.jar` file from the [release](https://github.com/galacticalex/urltester/tree/master/release) directory
 - Locate the `.jar` on your operating system. For example, it might be in `~/Downloads/...`
