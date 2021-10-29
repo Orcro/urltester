@@ -22,13 +22,17 @@ java -jar ut004.jar $file-to-test
 
 Copyright © 2021 Orcro Ltd.
 
-This program and the accompanying materials are made available under the terms of the Apache License Version 2.0 which is available at (www.apache.org/licenses/LICENSE-2.0.txt)[www.apache.org/licenses/LICENSE-2.0.txt].
+This program and the accompanying materials are made available under the terms of the Apache License Version 2.0 which is available at [www.apache.org/licenses/LICENSE-2.0.txt](www.apache.org/licenses/LICENSE-2.0.txt).
 
 ### Dependencies
 
-There is one dependency `clj-http`[https://github.com/dakrone/clj-http]. That software package is released under the MIT license with the following copyright notice:
+There is one dependency [clj-http](https://github.com/dakrone/clj-http). That software package is released under the MIT license with the following copyright notice:
 
 > Copyright (c) 2013 M. Lee Hinman
+
+### REUSE
+
+This project is [REUSE](https://reuse.software) compliant and uses SPDX standard file headers.
 
 ## Contact
 
@@ -42,6 +46,7 @@ Change methodology for testing files from "open windows for manual verification"
 
 ## Known bugs/quirks
 
+- Currently doesn't actually output results of tests (unless run as a leiningen project)
 - Some files have `webtester` instead of `urltester` (should not be an issue for use, might be for dev)
 
 ## Full installation instructions
