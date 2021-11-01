@@ -2,6 +2,15 @@
 ; 
 ; SPDX-License-Identifier: Apache-2.0
 
+
+
+
+(require '[clj-http.client :as client]) ; for repl dev
+
+
+
+
+
 ; for development testing, notice there's no ns
 
 ;(clojure.string/replace urls #"https:\/\/|http:\/\/" "www."))
@@ -103,3 +112,32 @@ p
 (type nil)
 
 (validUrl "https://fjhoeiwhqfo.com")
+
+(checkFilePath "test/urltester/example_files/test2.md")
+
+(def filePath "test/urltester/example_files/test2.md")
+(checkUrlList (getUrls filePath))
+(tryUrl "https://www.google.co.uk")
+(getUrls filePath)
+
+(checkFilePath filePath)
+(handleStartup filePath)
+(def filePath (list filePath))
+(first filePath)
+(-main filePath)
+
+; handleStartup tests
+
+(-main "test/urltester/example_files/test2.md") ; should works? does
+(-main "te") ; should not work? doesn't
+(-main "test/urltester/example_files/test2.md" " andmore") ; shouldn't work? doesn't
+
+; --
+
+(-main "test/urltester/example_files/test2.md")
+
+(getUrls "test/urltester/example_files/test2.md") 
+
+
+              
+

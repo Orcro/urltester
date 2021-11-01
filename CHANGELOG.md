@@ -6,6 +6,25 @@
 
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## Unreleased - 20-10-25
+
+### Added
+
+- Function to handle startup behaviour and errors using literate programming style
+
+### Changed
+
+- Refactored `core.clj` to reduce number of functions for clarity
+
+### Removed
+
+- Old url get function
+
+### Fixed
+
+- n/a
+
+
 ## [0.0.4] - 2021-10-20
 
 ### Added

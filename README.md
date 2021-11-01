@@ -32,7 +32,11 @@ There is one dependency [clj-http](https://github.com/dakrone/clj-http). That so
 
 ### REUSE
 
-This project is [REUSE](https://reuse.software) compliant and uses SPDX standard file headers.
+This project is compliant with version 3.0 of the [REUSE](https://reuse.software) specification and uses SPDX standard file headers.
+
+### SBOM
+
+A software bill of materials will be generated before version 1 is released.
 
 ## Contact
 

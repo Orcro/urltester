@@ -2,49 +2,71 @@
 ; 
 ; SPDX-License-Identifier: Apache-2.0
 
-; can java imports be removed? test
+
 (ns urltester.core
   (:gen-class)
-  (:require [clj-http.client :as client])
-  (:require clojure.java.shell clojure.java.io)
-  (:import java.lang.Runtime))
+  (:require [clj-http.client :as client]))
 
-; global regex used to match urls (should give this it's own ns for customizability)
+
+; global regex used to match urls (should give this its own ns for eventual customizability)
 (def urlregex #"https:\/\/.*|http:\/\/.*")
 
-(defn getUrls
-  "Extract URLs from the filepath provided as an argument. This seems to return a list."
-  [filePath]
-  (def fulltext (slurp filePath))
-  (re-seq urlregex fulltext))
 
-(defn validUrl
-  "Validate a single url, return true if valid, or false if there's an error of any kind."
+(defn getUrls
+  "Extract URLs from the filepath provided as an argument. This returns a list."
+  [filePath]
+  (re-seq urlregex (slurp filePath)))
+
+
+(defn tryUrl
+  "Sends an HTTP GET request to the passed argument. If the request is successful, prints true, else false."
   [url]
-  (try 
-    (client/get url)
-    true
-    (catch Throwable e
-      false)))
+  (println url " : " (try 
+                       (client/get url)
+                       true
+                       (catch Throwable e
+                         false))))
+
 
 (defn checkUrlList
-  "Pings each URL in the list passed to this function"
+  "Attempts a HTTP GET request for each URL in the list passed to the function"
   [urls]
   ; simply print the urls to start
-  (print (map validUrl urls)))
+  (map tryUrl urls))
 
-; currently, this function calls the url validator - that should be moved back to -main
-(defn checkFilePath
-  "Verify that a user provided filepath is valid"
-  [filePath]
-  (if (.exists (clojure.java.io/file filePath))
-    (checkUrlList (getUrls filePath))
-    (print (str "\nThe provided file at the path:\n\n" filePath "\n\ndoesn't exist.\n\n"))))
+
+(defn handleStartup
+  "Helper function to check startup parameters, keeps -main clean."
+  [args]
+
+  (def startupErrors (list "\nThe provided filepath doesn't exist.\n\n" ; 0
+                           "\nYou must specify a filepath.\n\n" ; 1
+                           "\nYou have provided too many filepaths.\n\n")) ; 2
+
+  (if (= (count args) 1) ; is a single parameter provided?
+
+    (do 
+      (if (.exists (clojure.java.io/file (first args))) ; yes -> is it a valid filepath?
+        true ; yes -> return true, signaling program to continue
+        (do ; no -> output error message, return false
+            (print (nth startupErrors 0))
+            false)))
+
+    (do 
+      (if (= (count args) 0) ; no -> so were parameters provided?
+        (do ; no -> print error message, return false
+            (print (nth startupErrors 1))
+            false)
+        (do ; too many were -> print error message, return false
+            (print (nth startupErrors 2))
+            false)))))
+
 
 (defn -main
   "This, is the entry point to the program."
   [& args]
-  (if (= (count args) 1)
-    (checkFilePath (first args)) 
-    (print "\nYou must call a filepath. Like this: \n\n> java -jar version-urltester.jar /full/path/to/file.txt\n\n"))
-  (shutdown-agents))
+  (if (= true (handleStartup args))
+    (checkUrlList (getUrls (first args)))))
+
+
+
