@@ -2,7 +2,7 @@
 ; 
 ; SPDX-License-Identifier: Apache-2.0
 
-(defproject urltester "0.0.4"
+(defproject urltester "0.5.0"
   :description "A Java applet written in Clojure for testing the validity of URLs within a text-based file."
   :url "https://github.com/galacticalex/urltester"
   :license {:name "Apache-2.0"
@@ -13,3 +13,4 @@
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}})
+

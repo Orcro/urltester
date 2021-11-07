@@ -133,11 +133,27 @@ p
 (-main "test/urltester/example_files/test2.md" " andmore") ; shouldn't work? doesn't
 
 ; --
-
 (-main "test/urltester/example_files/test2.md")
-
 (getUrls "test/urltester/example_files/test2.md") 
 
+
+
+(def workingUrl "https://www.google.co.uk")
+(def brokeUrl "https://www.gfjewiofjwoogle.co.uk")
+
+(defn tryUrl
+  "Sends an HTTP GET request to the passed argument. If the request is successful, prints true, else false."
+  [url]
+  (let [response? (try
+                    (client/get url)
+                    "valid"
+                    (catch Throwable e
+                      "invalid"))]
+    (println (str "url is " response?))))
+
+
+(tryUrl workingUrl)
+(tryUrl brokeUrl)
 
               
 

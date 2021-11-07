@@ -6,15 +6,17 @@
 
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
-## Unreleased - 20-10-25
+## [0.5.0] - 07-11-21
 
 ### Added
 
-- Function to handle startup behaviour and errors using literate programming style
+- Function to handle startup behaviour, and errors using literate programming style
+- Separate installation instruction guide
 
 ### Changed
 
 - Refactored `core.clj` to reduce number of functions for clarity
+- Versions correctly applied throughout
 
 ### Removed
 
@@ -22,10 +24,10 @@ All notable changes to this project will be documented in this file. This change
 
 ### Fixed
 
-- n/a
+- Results of checks now output correctly
 
 
-## [0.0.4] - 2021-10-20
+## 0.0.4 - 2021-10-20
 
 ### Added
 
@@ -103,4 +105,4 @@ All notable changes to this project will be documented in this file. This change
 
 - N/A
 
-[0.0.4]: https://github.com/galacticalex/urltester/release
+[0.5.0]: https://github.com/galacticalex/urltester/release

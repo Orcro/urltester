@@ -21,18 +21,20 @@
 (defn tryUrl
   "Sends an HTTP GET request to the passed argument. If the request is successful, prints true, else false."
   [url]
-  (println url " : " (try 
-                       (client/get url)
-                       true
-                       (catch Throwable e
-                         false))))
+  (let [response? (try
+                    (client/get url)
+                    "valid."
+                    (catch Throwable e
+                      "invalid."))]
+    (println (str "URL: " url " is " response?)))
+
+  nil)
 
 
 (defn checkUrlList
   "Attempts a HTTP GET request for each URL in the list passed to the function"
   [urls]
-  ; simply print the urls to start
-  (map tryUrl urls))
+  (dorun (map tryUrl urls)))
 
 
 (defn handleStartup
