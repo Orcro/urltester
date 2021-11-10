@@ -2,6 +2,10 @@
 ; 
 ; SPDX-License-Identifier: Apache-2.0
 
+
+; This file is used by Clojure & Leiningen to manage the project.
+
+
 (defproject urltester "0.5.0"
   :description "A Java applet written in Clojure for testing the validity of URLs within a text-based file."
   :url "https://github.com/galacticalex/urltester"

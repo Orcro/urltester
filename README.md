@@ -4,7 +4,7 @@
 
 # urltester
 
-A Java productivity tool written in Clojure which tests the existence of web-servers provided by URLs in a text-based file. These text files could be `.txt`, `.md`, or even source code file like `.clj`. Output is currently simple boolen results to std-out, which looks something like this:
+A Java productivity tool written in Clojure which tests the existence of web-servers provided by URLs in a text-based file. These text files could be `.txt`, `.md`, or even source code file like `.clj` or `.py`. Output is currently boolen results to standard out which looks something like this:
 
 ```
 URL: https://www.duckduckgo.com is valid.
@@ -16,13 +16,13 @@ URL: https://mynonexistantdomain.com is invalid.
 
 > Full installation instructions are available in `./docs/userInstructions.md`
 
-Find the latest version in `./releases/` and run as a java applet:
+Download the latest version in `./releases/` and run as a java applet:
 
 ```bash
 $ java -jar urltester-0.5.0.jar my_file_to_check.md
 ```
 
-Progam output can be used in shell pipelines (but this is untested). For example, to open the results in the `Vi` editor:
+Progam output can be used in unix shell pipelines (but this is untested). For example, to open the results in the `Vi` editor:
 
 ```bash
 $ java -jar urltester-0.5.0.jar my_file_to_check.md | vi -
@@ -33,7 +33,7 @@ $ java -jar urltester-0.5.0.jar my_file_to_check.md | vi -
 
 Copyright © 2021 Orcro Ltd.
 
-This program and the accompanying materials are made available under the terms of the Apache License Version 2.0 which is available in `./LICENSES/`. Or at [www.apache.org/licenses/LICENSE-2.0.txt](www.apache.org/licenses/LICENSE-2.0.txt).
+This program and the accompanying materials are made available under the terms of the Apache License Version 2.0 which is available in `./LICENSES/`. A copy is also available at this permalink [www.apache.org/licenses/LICENSE-2.0.txt](www.apache.org/licenses/LICENSE-2.0.txt).
 
 ### Dependencies
 
@@ -53,4 +53,4 @@ A software bill of materials will be generated before version 1 is released.
 
 Orcro Ltd. team@orcro.co.uk
 
-Maintainer: Alex alexander.murphy@orcro.co.uk
+Maintainer Alex alexander.murphy@orcro.co.uk
