@@ -23,9 +23,9 @@
   [url]
   (let [response? (try
                     (client/get url)
-                    "valid."
+                    "\33[32mvalid.\33[0m"
                     (catch Throwable e
-                      "invalid."))]
+                      "\033[91minvalid.\033[0m"))]
     (println (str "URL: " url " is " response?)))
 
   nil)
