@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file. This change
 
 - Function to handle startup behaviour, and errors using literate programming style
 - Separate installation instruction guide
+- Colours! Red/Green for invalid/valid urls respectively
 
 ### Changed
 
