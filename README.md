@@ -4,7 +4,7 @@
 
 # urltester
 
-A Java productivity tool written in Clojure which tests the existence of web-servers provided by URLs in a text-based file. These text files could be `.txt`, `.md`, or even source code file like `.clj` or `.py`. Output is currently boolen results to standard out which looks something like this:
+A Java productivity tool written in Clojure which tests the existence of web-servers that are provided by URLs in a text-based file. These text files could be `.txt`, `.md`, or even source code file like `.clj` or `.py`. Output is currently boolen results to standard out which looks something like this:
 
 ```
 URL: https://www.duckduckgo.com is valid.
@@ -28,7 +28,6 @@ Progam output can be used in unix shell pipelines (but this is untested). For ex
 $ java -jar urltester-0.5.0.jar my_file_to_check.md | vi -
 ```
 
-
 ## Licensing
 
 Copyright © 2021 Orcro Ltd.
@@ -37,20 +36,20 @@ This program and the accompanying materials are made available under the terms o
 
 ### Dependencies
 
-There is one dependency [clj-http](https://github.com/dakrone/clj-http). That software package is released under the MIT license with the following copyright notice:
+There is one direct dependency [clj-http](https://github.com/dakrone/clj-http). That software package is released under the [MIT](https://mit-license.org) license with the following copyright notice:
 
 > Copyright (c) 2013 M. Lee Hinman
 
 ### REUSE
 
-This project is compliant with version 3.0 of the [REUSE](https://reuse.software) specification and uses SPDX standard file headers.
+This project is compliant with version 3.0 of the [REUSE](https://reuse.software) specification and uses SPDX standard file headers throughout.
 
 ### SBOM
 
-A software bill of materials will be generated before version 1 is released.
+_A software bill of materials will be generated before version 1 is released._
 
 ## Contact
 
-Orcro Ltd. team@orcro.co.uk
+:house_with_garden: Orcro Ltd. team@orcro.co.uk
 
-Maintainer Alex alexander.murphy@orcro.co.uk
+:hammer: Maintainer Alex alexander.murphy@orcro.co.uk
