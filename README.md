@@ -19,13 +19,13 @@ URL: https://mynonexistantdomain.com is invalid.
 Download the latest version in `./releases/` and run as a java applet:
 
 ```bash
-$ java -jar urltester-0.5.0.jar my_file_to_check.md
+$ java -jar urltester-0.5.1.jar my_file_to_check.md
 ```
 
 Progam output can be used in unix shell pipelines (but this is untested). For example, to open the results in the `Vi` editor:
 
 ```bash
-$ java -jar urltester-0.5.0.jar my_file_to_check.md | vi -
+$ java -jar urltester-0.5.1.jar my_file_to_check.md | vi -
 ```
 
 ## Licensing
