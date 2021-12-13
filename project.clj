@@ -12,7 +12,8 @@
   :license {:name "Apache-2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0.txt"}
   :dependencies [[org.clojure/clojure "1.10.3"]
-                 [clj-http "3.12.3"]]
+                 [clj-http "3.12.3"]
+                 [incanter "1.9.3"]]
   :main ^:skip-aot urltester.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all

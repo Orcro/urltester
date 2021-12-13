@@ -155,5 +155,8 @@ p
 (tryUrl workingUrl)
 (tryUrl brokeUrl)
 
-              
+(require '[incanter.stats :as stats]) 
+(stats/scalar-abs 8) ; => 8
+(stats/scalar-abs -8) ; => 8 yay
+
 
