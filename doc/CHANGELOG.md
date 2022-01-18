@@ -2,7 +2,31 @@
 <!-- -->
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
-## [0.5.1] - 07-11-21
+# Change Log
+
+All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
+
+The unreleased version is not compiled, you must do this yourself if you want those features with `lein build`. The most recent compiled build (which is probably what you want) is [0.5.0].
+
+## [Unreleased] - 18-01-2022
+
+### Added
+
+- REUSE badge
+
+### Changed
+
+- Refined readme
+
+### Removed
+
+- n/a
+
+### Fixed
+
+- Changelog version link corrected 
+
+## [0.5.0] - 07-11-21
 
 ### Added
 
@@ -19,10 +43,6 @@
 ### Fixed
 
 - n/a
-
-# Change Log
-
-All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
 ## [0.5.0] - 07-11-21
 
@@ -124,4 +144,5 @@ All notable changes to this project will be documented in this file. This change
 
 - N/A
 
+[Unreleased]: https://github.com/galacticalex/urltester
 [0.5.0]: https://github.com/galacticalex/urltester/release
