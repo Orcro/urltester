@@ -27,6 +27,7 @@ The unreleased version is not compiled, you must do this yourself if you want th
 ### Fixed
 
 - Changelog version link corrected 
+- Changelog release link corrected
 
 ## [0.5.1] - 07-11-21
 
@@ -147,4 +148,4 @@ The unreleased version is not compiled, you must do this yourself if you want th
 - N/A
 
 [Unreleased]: https://github.com/galacticalex/urltester
-[0.5.1]: https://github.com/galacticalex/urltester/release
+[0.5.1]: https://github.com/galacticalex/urltester/tree/master/release
