@@ -13,10 +13,12 @@ The unreleased version is not compiled, you must do this yourself if you want th
 ### Added
 
 - REUSE badge
+- Third sample file added, for testing [concurrency](https://github.com/galacticalex/urltester/issues/10) and [duplicate urls](https://github.com/galacticalex/urltester/issues/9). 
 
 ### Changed
 
 - Refined readme
+- `(source map)` replaced with `(source pmap)`
 
 ### Removed
 
@@ -26,7 +28,7 @@ The unreleased version is not compiled, you must do this yourself if you want th
 
 - Changelog version link corrected 
 
-## [0.5.0] - 07-11-21
+## [0.5.1] - 07-11-21
 
 ### Added
 
@@ -44,7 +46,7 @@ The unreleased version is not compiled, you must do this yourself if you want th
 
 - n/a
 
-## [0.5.0] - 07-11-21
+## 0.5.0 - 07-11-21
 
 ### Added
 
@@ -145,4 +147,4 @@ The unreleased version is not compiled, you must do this yourself if you want th
 - N/A
 
 [Unreleased]: https://github.com/galacticalex/urltester
-[0.5.0]: https://github.com/galacticalex/urltester/release
+[0.5.1]: https://github.com/galacticalex/urltester/release

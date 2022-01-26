@@ -34,7 +34,7 @@
 (defn checkUrlList
   "Attempts a HTTP GET request for each URL in the list passed to the function"
   [urls]
-  (dorun (map tryUrl urls)))
+  (dorun (pmap tryUrl urls)))
 
 
 (defn handleStartup
