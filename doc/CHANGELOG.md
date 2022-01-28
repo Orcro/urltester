@@ -12,13 +12,14 @@ The unreleased version is not compiled, you must do this yourself if you want th
 
 ### Added
 
-- REUSE badge
 - Third sample file added, for testing [concurrency](https://github.com/galacticalex/urltester/issues/10) and [duplicate urls](https://github.com/galacticalex/urltester/issues/9). 
+- REUSE badge
+- Additional dependencies (along with copyright) for future use
 
 ### Changed
 
-- Refined readme
 - `(source map)` replaced with `(source pmap)`
+- Refined readme
 
 ### Removed
 

@@ -38,11 +38,23 @@ This program and the accompanying materials are made available under the terms o
 
 ### Dependencies
 
-> A software bill of materials will be generated before version 1 is released
+`urltester` depends on the following projects:
 
-`urltester` depends on [clj-http](https://github.com/dakrone/clj-http). That software package is released under the [MIT](https://mit-license.org) license with the following copyright notice:
+#### [clj-http](https://github.com/dakrone/clj-http) version 3.12.3
+
+This project is released under [MIT](https://mit-license.org) with the following copyright notice:
 
 > Copyright (c) 2013 M. Lee Hinman
+
+#### [clerk](https://github.com/nextjournal/clerk) version 0.5.346
+
+This project is released under [ISC](https://www.isc.org/licenses/) with the following copyright notice:
+
+> Copyright 2021 Nextjournal GmbH.
+
+#### [incanter](https://github.com/incanter/incanter) version 1.9.3
+
+This project appears to be released under the [EPL version 1](https://www.eclipse.org/legal/epl-v10.html) with no copyright text. _Please use the contact details below if you are the copyright holder and wish to update this information._
 
 ## Contact
 
