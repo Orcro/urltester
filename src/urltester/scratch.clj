@@ -160,3 +160,22 @@ p
 (stats/scalar-abs -8) ; => 8 yay
 
 
+(println "hi")
+
+(def dat [:one :two :three :three])
+
+dat
+
+(map println dat)
+
+;; work on #9 
+(defn remove-duplicates
+  "Identify unique values in the *input* and return them in a list."
+  [input]
+  (map println input))
+
+(remove-duplicates dat)
+
+(source let)
+
+
