@@ -23,7 +23,7 @@ The unreleased version is not compiled, you must do this yourself if you want th
 
 ### Removed
 
-- n/a
+- Unused libraries from project (incanter & clerk)
 
 ### Fixed
 

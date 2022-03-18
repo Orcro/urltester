@@ -5,7 +5,8 @@
 
 (ns urltester.core
   (:gen-class)
-  (:require [clj-http.client :as client]))
+  (:require [clj-http.client :as client]
+            [clojure.data.csv :as csv]))
 
 
 ; global regex used to match urls (should give this its own ns for eventual customizability)
@@ -65,7 +66,7 @@
 
 
 (defn -main
-  "This, is the entry point to the program."
+  "Program entry point."
   [& args]
   (if (= true (handleStartup args))
     (checkUrlList (getUrls (first args)))))
